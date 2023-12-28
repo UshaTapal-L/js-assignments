@@ -20,7 +20,6 @@ function checkNumber(){
 
 checkNumber();
 
-
 // Assignment 2:
 
 
@@ -49,7 +48,6 @@ function calculateFactorial() {
 
 calculateFactorial();
 
-
 // Assignment 3
 function findLargerNumber() {
     let num1 = parseFloat(prompt("Enter the first number:"));
@@ -64,7 +62,6 @@ function findLargerNumber() {
 }
 
 findLargerNumber();
-
 
 
 // Assignment 4
@@ -83,8 +80,6 @@ function isPalindrome() {
 
 isPalindrome();
 
-
-
 // Assignment 5
 function printPrimesUpToN() {
     let n = parseInt(prompt("Enter a positive integer:"));
@@ -99,7 +94,17 @@ function printPrimesUpToN() {
         console.log("Invalid input. Please enter a valid positive integer greater than 1.");
     }
 }
-// Call the function to print prime numbers up to a number
+
+function isPrime(num) {
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return num > 1;
+}
+
+
 printPrimesUpToN();
 
 
@@ -138,8 +143,6 @@ function simpleCalculator() {
 
 
 simpleCalculator();
-
-
 
 // Assignment 7
 
@@ -184,6 +187,7 @@ function isPerfectNumber() {
 isPerfectNumber();
 
 
+
 // Assignment 9
 
 function printFibonacciSeriesUpToN() {
@@ -205,7 +209,6 @@ function printFibonacciSeriesUpToN() {
 
 
 printFibonacciSeriesUpToN();
-
 
 
 // Assignment 10
